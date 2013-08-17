@@ -610,7 +610,7 @@ div#footer-links p {
 	margin-top:10px;
 	margin-left:40px;
 	padding:3px 0px 0px 0px;
-   background:#7aa127;
+   background:#700;
   
 }
 .quotationI
@@ -1406,6 +1406,14 @@ div#footer-links p {
 	margin-top:0px;
 	width:350px;
 	height:300px;
+	margin-left:80px;
+	background-color:#DFE;
+}
+.y_clients
+{
+	margin-top:0px;
+	width:330px;
+	height:300px;
 	margin-left:240px;
 	background-color:#DFE;
 }
@@ -1422,7 +1430,7 @@ div#footer-links p {
 	margin-top:-299px;
 	width:400px;
 	height:300px;
-	margin-left:540px;
+	margin-left:415px;
 	background-color:#DFE;
 
 }
@@ -1772,4 +1780,8 @@ option
 	.san{
 		margin-left: -40px;
         margin-top: 49px;
+	}
+	.san1{
+		margin-left: -40px;
+        margin-top: 23px;
 	}

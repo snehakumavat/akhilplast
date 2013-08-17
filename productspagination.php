@@ -3,6 +3,20 @@ include("include/database1.php");
 error_reporting(0);
 include("session.php");
 ?>
+<link href="id_popup/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="id_popup/jquery.js" type="text/javascript"></script>
+<script src="id_popup/facebox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+		 
+      $('a[rel*=facebox]').facebox({
+        loadingImage : 'src/loading.gif',
+        closeImage   : 'src/closelabel.png'
+      })
+    })
+	
+</script>
 <?php
 $per_page = 20; 
 
@@ -43,7 +57,7 @@ if($_GET)
 		echo $c_row[7];	
 		echo "</td>";
 		echo "<td >";		
-        echo "<a href='?c_id1=$c_row[0]' onclick='return confirmSubmit()'><img src='imgs1/green_delete.png' height='20px;'/></a>&nbsp;<a href='updateclients.php?c_id2=$c_row[0]'><img src='imgs1/updt.png' height='20px;'/></a>&nbsp;<a href='clientsview.php?c_id3=$c_row[0]'><img src='imgs1/view.png'  /></a> ";
+        echo "<a href='?c_id1=$c_row[0]' onclick='return confirmSubmit()'><img src='imgs1/green_delete.png' height='20px;'/></a>&nbsp;<a rel='facebox' href='updateproducts.php?c_id2=$c_row[0]'><img src='imgs1/updt.png' height='20px;'/></a>&nbsp;<a rel='facebox' href='productsview.php?c_id3=$c_row[0]'><img src='imgs1/view.png'  /></a> ";
 		echo "</td>";
 		echo "</tr>";
 		}

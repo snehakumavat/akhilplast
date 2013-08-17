@@ -30,14 +30,7 @@ if($_GET)
       })
     })
 	
-	function confirmSubmit()
-{
-var agree=confirm("Are you sure to Delete this Entry?");
-if (agree)
-	return true ;
-else
-	return false ;
-}
+	 
 </script>
         <table class="emp_tab">
         <tr class="emp_header">
@@ -64,7 +57,7 @@ else
         echo "<a href='?c_id1=$c_row[0]' onclick='return confirmSubmit()'>
 		<img src='imgs1/green_delete.png' height='20px;'/></a>&nbsp;
 		<a rel='facebox' href='updateclients.php?c_id2=$c_row[0]'>
-		<img src='imgs1/updt.png' height='20px;'/></a>&nbsp;<a rel='facebox' href='clientsview.php?c_id3=$c_row[0]'><img src='imgs1/view.png'/></a>&nbsp;<a href='add_requirement.php?c_id3=$c_row[0]' class='print'>Requirment</a>&nbsp;<a href='view_requirment.php?c_id3=$c_row[0]' class='print'>ViewRequirment</a>";
+		<img src='imgs1/updt.png' height='20px;'/></a>&nbsp;<a rel='facebox' href='clientsview.php?c_id3=$c_row[0]'><img src='imgs1/view.png'/></a>&nbsp;<a href='add_requirement.php?c_id3=$c_row[0]' class='print'>Requirment</a>&nbsp;<a href='view_Requirement.php?c_id3=$c_row[0]' class='print'>ViewRequirment</a>";
 		echo "</td>";
 		echo "</tr>";
 		}

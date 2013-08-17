@@ -14,10 +14,7 @@
              
              </li>                                                           
             <li><a class="has_submenu" href="view_stock.php">Stock</a>
-            <ul>
-                	<li><a href="add_stock.php">Add Stock</a></li>                	
-
-            </ul></li>
+            </li>
              
               
            

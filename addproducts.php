@@ -1,5 +1,5 @@
 <?php
-include("include/database1.php");
+include("include/database.php");
 	if(isset($_REQUEST['p_add']))
 	{
 	
@@ -13,9 +13,8 @@ include("include/database1.php");
 	
 	$c_t9=$_POST['remark'];
 		
-		
-	 $c_qry="insert into products (p_code,p_name,p_size,p_wt,p_color,p_shape,p_quant,c_color,remark) values('".$c_t1."','".$c_t2."','".$c_t3."','".$c_t4."','".$c_t6."','".$c_t7."','".$c_t8."','".$c_t9."')";	
-	$c_res=mysql_query($c_qry);
+	  $c_qry="insert into products (p_code,p_name,p_size,p_wt,p_color,p_shape,p_quant,remark) values('".$c_t1."','".$c_t2."','".$c_t3."','".$c_t4."','".$c_t6."','".$c_t7."','".$c_t8."','".$c_t9."')";	
+	$c_res=mysql_query($c_qry) or die(mysql_error());
 	if($c_res)
 	{
 		header("location:products.php");

@@ -33,6 +33,7 @@ $pages = ceil($count/$per_page);
 <title>Akhil Plast</title>
 <link rel="stylesheet" href="styles2.css" type="text/css" />
 <link rel="stylesheet" href="styles.css" type="text/css" />
+<link href="id_popup/facebox.css" media="screen" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
@@ -243,6 +244,7 @@ cursor: pointer;
                 </div>
                  <div class="popupbox" id="popuprel">
 		<div id="intabdiv">
+        <br><br>
          <?php
          include('addproducts.php');
 		 ?>	
